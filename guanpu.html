@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>QQ音乐平台 2022年3-5月期间听歌数据</title>
+	<link rel="stylesheet" href="css/guanpu.css">
+</head>
+<body>
+	<img class="circle" src="img/CircleBg.png" >
+	<header>
+		<a href="index.html"><img src="img/logo.png" alt="logo"></a>
+		<nav>
+			<ul>
+				<li><a href="index.html">溯 源</a></li>
+				<li><a href="tingbian.html">听 变</a></li>
+				<li><a href="guanpu.html"  class="active">观 谱</a></li>
+				<li><a href="juyin.html">聚 音</a></li>
+				<li><a href="xunqu.html">寻 曲</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<!-- 第一部分-引入部分 -->
+
+		<h6 class="bodytext">被人们选择的音乐,是那段日子中独特的符号    符号跃然纸上,组成了生活的乐谱</h6>
+		<div class="MarBox">
+	       <button class="Btn1" type="button" onclick="hideButtons1()" class="active" >
+			 <img class="slidebtn"   src="img/Play.png" >
+			 <img class="MarTitlePin"  src="img/MarTitlePin.png" >
+		   </button>	
+		</div>
+		<div class="AprBox">
+		   <button class="Btn2" type="button" onclick="hideButtons2()"  >
+			   <img class="slidebtn"  src="img/Play.png" >
+			   <img class="MarTitlePin"  src="img/AprTitlePin.png" >
+		   </button>	
+		</div>
+		<div class="MayBox">
+		   <button class="Btn3" type="button" onclick="hideButtons3()"  >
+			   <img class="slidebtn"  src="img/Play.png" >
+			   <img class="MarTitlePin"  src="img/MayTitlePin.png" >
+		   </button>	
+		</div>
+		
+<!-- 	曲谱部分初始style="display: none;"	 -->
+	<div id="NewBox" class="NewBox1" style="display: none;">
+		<div id="L" class="closeBtn" onclick="showButtons()"> </div>
+		<div id="L" class="MMusicHead">
+			<div class="marTitle">  </div>
+			<div class="TopMusicTab">
+				<div class="Top3" id="Top">
+					
+					<audio id="audio3-3" src="music/1.3.mp3"></audio>
+
+					<div id="disk">
+						<div class="mask">
+						    <div class="play-icon">
+						    </div>
+						  </div>
+						<img src="img/3-Top3.png" >
+					</div>
+					<div id="TopMusicText">
+						Top2<br/>名场面
+					</div>
+				</div>
+				<div class="Top2" id="Top">
+					<audio id="audio3-2" src="music/1.2.mp3"></audio>
+
+					<div id="disk">
+						<div class="mask">
+						    <div class="play-icon">
+						    </div>
+						  </div>
+						<img src="img/3-Top2.png" >
+					</div>
+					<div id="TopMusicText">
+						Top2<br/>名场面
+					</div>
+				</div>
+				<div class="Top1" id="Top">					
+					<audio id="audio3-1" src="music/1.1.mp3"></audio>
+					
+					<div id="disk">
+						<div class="mask">
+						    <div class="play-icon">
+						    
+						    </div>
+						  </div>
+						<img src="img/3-Top1.png" >
+					</div>
+				<div id="TopMusicText">
+					Top1<br/>O.O
+				</div>
+				</div>
+			
+			</div>
+		</div>
+		<div id="L" class="Content">
+			<img src="img/Pu.png" >
+			<div id="E3">1</div>
+		</div>
+	</div>
+	
+	<div id="NewBox" class="NewBox2" style="display: none;">
+		<div id="L" class="closeBtn" onclick="showButtons()"> </div>
+		<div id="L" class="MMusicHead">
+			<div class="aprTitle">  </div>
+			<div class="TopMusicTab">
+				<div class="Top3" id="Top">
+					<audio id="audio4-3" src="music/2.3.mp3"></audio>
+
+					<div id="disk">
+						<div class="mask">
+						    <div class="play-icon">
+						    </div>
+						  </div>
+						<img src="img/4-Top3.png" >
+					</div>
+					<div id="TopMusicText">
+						Top3<br/>Falling you
+					</div>
+				</div>
+				<div class="Top2" id="Top">
+					
+					<audio id="audio4-2" src="music/2.2.mp3"></audio>
+
+					<div id="disk">
+						<div class="mask">
+						    <div class="play-icon">
+						    </div>
+						  </div>
+						<img src="img/4-Top2.png" >
+					</div>
+					<div id="TopMusicText">
+						Top2<br/>白话文
+					</div>
+				</div>
+				<div class="Top1" id="Top">					
+					<audio id="audio4-1" src="music/2.1.mp3"></audio>
+					
+					<div id="disk">
+						<div class="mask">
+						    <div class="play-icon">
+						    
+						    </div>
+						  </div>
+						<img src="img/4-Top1.png" >
+					</div>
+				<div id="TopMusicText">
+					Top1<br/>柳叶刀
+				</div>
+				</div>
+			
+			</div>
+		</div>
+		<div id="L" class="Content">
+			<img src="img/Pu.png" >
+			<div id="E4">2</div>
+		</div>
+	</div>
+
+	<div id="NewBox" class="NewBox3" style="display: none;">
+		<div id="L" class="closeBtn" onclick="showButtons()"> </div>
+		<div id="L" class="MMusicHead">
+			<div class="mayTitle">  </div>
+			<div class="TopMusicTab">
+				<div class="Top3" id="Top">
+					
+					<audio id="audio5-3" src="music/3.3.mp3"></audio>
+
+					<div id="disk">
+						<div class="mask">
+						    <div class="play-icon">
+						    </div>
+						  </div>
+						<img src="img/5-Top3.png" >
+					</div>
+					<div id="TopMusicText">
+						Top3<br/>孤勇者
+					</div>
+				</div>
+				<div class="Top2" id="Top">
+					
+					<audio id="audio5-2" src="music/3.2.mp3"></audio>
+
+					<div id="disk">
+						<div class="mask">
+						    <div class="play-icon">
+						    </div>
+						  </div>
+						<img src="img/5-Top2.png" >
+					</div>
+					<div id="TopMusicText">
+						Top2<br/>Good boy 
+					</div>
+				</div>
+				<div class="Top1" id="Top">					
+					<audio id="audio5-1" src="music/3.1.mp3"></audio>
+					
+					<div id="disk">
+						<div class="mask">
+						    <div class="play-icon">
+						    
+						    </div>
+						  </div>
+						<img src="img/5-Top1.png" >
+					</div>
+				<div id="TopMusicText">
+					Top1<br/>逆流而上
+				</div>
+				</div>
+			
+			</div>
+		</div>
+		<div id="L" class="Content">
+			<img src="img/Pu.png" >
+			<div id="E5">3</div>
+		</div>
+	</div>
+		
+	</main>
+    
+
+
+ <script>
+      function hideButtons1() {
+        document.querySelector(".NewBox1").style.display = "block";
+      }
+      function hideButtons2() {
+        document.querySelector(".NewBox2").style.display = "block";
+      }
+	  function hideButtons3() {
+	    document.querySelector(".NewBox3").style.display = "block";
+	  }
+      function showButtons() {
+
+        document.querySelector(".MarBox").style.display = "block";
+        document.querySelector(".AprBox").style.display = "block";
+        document.querySelector(".MayBox").style.display = "block";
+		document.querySelector(".circle").style.display = "block";
+		document.querySelector(".bodytext").style.display = "block";
+		document.querySelector(".NewBox1").style.display = "none";
+		document.querySelector(".NewBox2").style.display = "none";
+		document.querySelector(".NewBox3").style.display = "none";
+	  }
+const playIcon = document.querySelector(".play-icon");
+      const pauseIcon = document.createElement("div");
+      const pauseImg = document.createElement("img");
+      pauseImg.src = "img/Pause.png";
+      pauseImg.alt = "pause icon";
+      pauseIcon.classList.add("play-icon", "pause-icon");
+      pauseIcon.appendChild(pauseImg);
+      const audio = document.querySelector("#audio3-1");
+      let playing = false;
+      playIcon.addEventListener("click", () => {
+        if (!playing) {
+          audio.play();
+          playIcon.replaceWith(pauseIcon);
+          playing = true;
+        } else {
+          audio.pause();
+          pauseIcon.replaceWith(playIcon);
+          playing = false;
+        }
+      });
+      audio.addEventListener("ended", () => {
+        pauseIcon.replaceWith(playIcon);
+        playing = false;
+      });
+      pauseIcon.addEventListener("click", () => {
+        audio.pause();
+        pauseIcon.replaceWith(playIcon);
+        playing = false;
+      });
+	
+    </script>
+	<script src="js/echarts.min.js"></script>
+	<script src="js/MarMap.js" type="module"></script>
+<!-- 	<script src="js/MarMapp.js"></script> -->
+<!-- 	<script src="js/AprMap.js"></script>
+	<script src="js/MayMap.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>QQ音乐平台 2022年3-5月期间听歌数据</title>
+	<link rel="stylesheet" href="css/juyin.css">
+</head>
+<body>
+	<header>
+		<a href="index.html"><img src="img/logo.png" alt="logo"></a>
+		<nav>
+			<ul>
+				<li><a href="index.html">溯 源</a></li>
+				<li><a href="tingbian.html">听 变</a></li>
+				<li><a href="guanpu.html">观 谱</a></li>
+				<li><a href="juyin.html"  class="active">聚 音</a></li>
+				<li><a href="xunqu.html">寻 曲</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<!-- 第一部分-引入部分 -->
+		<div id="LandingText">
+			<p>一份来自上海地区疫情期间听歌习惯的调研</p>
+			<div class="text-container">
+				<h6 class="bodytext">AM/PM，白天或黑夜，化作星辰在音乐银河中寻求慰藉 </h6>			
+			</div>
+		</div>
+
+          <div class="centerBall">
+          	 <img id="ball" src="img/ball.png" />
+			 <div class="huixing"> </div>
+			 <button type="button" onclick="ShowChartToAM()" class="EXPLORE" style="display: block;" > </button>
+			 <button type="button" onclick="ShowChartToPM()" class="CHANGEtoPM" style="display: none;" > </button>
+			 <button type="button" onclick="ShowChartToAM()" class="CHANGEtoAM" style="display: none;" > </button>
+          </div>
+		  <div id="chart" class="AM" style="display: none;">
+		  	<div class="title">	 </div>
+			<div class="chartbg">	 </div>
+			<div id="huixingData" class="AMdata">			
+			</div>
+		  </div>
+		  <div id="chart" class="PM" style="display: none;">
+		  	<div class="title">	 </div>
+		  			<div class="chartbg">	 </div>
+		  			<div id="huixingData" class="PMdata">			
+		  			</div>
+		  </div>
+		  
+	</main>
+    
+
+ <script>
+       function ShowChartToAM() {
+         document.querySelector(".AM").style.display = "block";
+		 document.querySelector(".PM").style.display = "none";
+		 document.querySelector(".EXPLORE").style.display = "none";
+		 document.querySelector(".huixing").style.display = "none";
+		 document.querySelector("#LandingText").style.display = "none";
+		 document.querySelector(".CHANGEtoAM").style.display = "none";
+		 document.querySelector(".CHANGEtoPM").style.display = "block";
+		 // document.querySelector("#ball").style.transform = "rotate(360deg)";
+		 // document.querySelector("#ball").style.transition = "all 1s ease";
+       }
+       function ShowChartToPM() {
+        document.querySelector(".PM").style.display = "block";
+		document.querySelector(".AM").style.display = "none";
+        document.querySelector(".EXPLORE").style.display = "none";
+		document.querySelector(".huixing").style.display = "none";
+		document.querySelector("#LandingText").style.display = "none";
+        document.querySelector(".CHANGEtoPM").style.display = "none";
+		document.querySelector(".CHANGEtoAM").style.display = "block";
+		// document.querySelector("#ball").style.transform = "rotate(360deg)";
+		// document.querySelector("#ball").style.transition = "all 1s ease";
+ 	  }
+	  function HideChart() {
+	    document.querySelector(".EXPLORE").style.display = "block";
+	   	document.querySelector(".NewBox3").style.display = "none";
+	  }
+  </script>
+</body>
+</html>
