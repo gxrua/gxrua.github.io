@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Source2</title>
+	<link rel="stylesheet" href="css/suyuan.css">
+
+  </head>
+  <body onload="playAudio()">
+	  <audio id="backgroundAudio" autoplay loop>
+	    <source src="./background_music.mp3" type="audio/mpeg" />
+	  </audio>
+    <!-- First section -->
+    <div id="section1" class="section">
+<!--      <div class="title">Section 1</div>
+      <div class="section-title">Section 1 Title</div>
+      <div class="section-text">Section 1 Text</div> -->
+
+	 <img src="img/welcome.png" class="logoandstart" >	
+     <button class="button" onclick="document.getElementById('section2').scrollIntoView({ behavior: 'smooth' });"><img src="img/START.png" ></button>	  
+	 <img src="img/month.png" class="footer" >
+    </div>
+
+    <!-- Second section -->
+    <div id="section2" class="section">
+
+	  <img class="textSection1" src="img/textSection1.png" />
+     <!-- <button onclick="document.getElementById('section3').scrollIntoView({ behavior: 'smooth' });">Next Section</button> -->
+    </div>
+
+    <!-- Third section -->
+    <div id="section3" class="section">
+<!--      <div class="title">Section 3</div>
+      <div class="section-title">Section 3 Title</div>
+      <div class="section-text">Section 3 Text</div> -->
+	  <img class="textSection2" src="img/textSection2.png" />
+    </div>
+	<!-- Third section -->
+	<div id="section4" class="section">
+		<header>
+		 <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+	     <div class="nav">   	
+	   		<ul>
+	   			<li><a href="index.html" class="active">溯源</a></li>
+	   			<li><a href="tingbian.html" >听变</a></li>
+	   			<li><a href="guanpu.html">观谱</a></li>
+	   			<li><a href="juyin.html">聚音</a></li>
+	   			<li><a href="xunqu.html">寻曲</a></li>
+	   		</ul>	
+	     </div>
+	   </header>
+			
+<!-- 	  <div class="title">Section 4</div>
+	  <div class="section-title">Section 4 Title</div>
+	  <div class="section-text">Section 4 Text</div> -->
+	   <img class="textSection3" src="img/textSection3.png" />
+	</div>
+
+    <!-- Script for the parallax effect -->
+    <script>
+		function playAudio() {
+		  var audio = document.getElementById("backgroundAudio");
+		  audio.play();
+		}
+      window.addEventListener('scroll', function() {
+        let offset = window.pageYOffset;
+        let parallax = document.querySelectorAll('.section');
+        parallax.forEach(function(prllx, i) {
+          prllx.style.backgroundPositionY = (offset - prllx.offsetTop) * 0.6+ 12 + "px";
+        });
+      });
+    </script>
+  </body>
+</html>
