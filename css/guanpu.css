@@ -1,0 +1,504 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.circle{
+	width: 100%;
+	height: 80%;
+	float: left;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+h6{
+	width: 32%;
+	height: auto;
+	position: absolute;
+	left: 34%;
+	top: 22%;
+	text-align: center;
+	letter-spacing: 1.2em;
+	font-size: 0.4em;
+	line-height: 5em;
+	/* background-color: #0000FF; */
+    animation: typing 3s steps(40, end), blink-caret 0.5s step-start infinite;
+	
+}
+ /* typing animation keyframes */
+     @keyframes typing {
+       from { width: 0% }
+       to { width: 35% }
+     }
+     @keyframes blink-caret {
+       from, to { border-color: transparent }
+       50% { border-color: #F2F2F2 }
+     }
+main {
+  font-family: 'Rounded Mplus 1c', sans-serif;
+  font-size: 24px;
+  font-weight: 1920px;
+  line-height: 72px;
+  letter-spacing: 0.8em;
+  text-align: center;
+  color: #CCA6E0;
+  font-size: 24px;
+  position: page;
+  margin-top: 300px;
+/* background-color: aqua; */
+}
+body {
+	background-image: url(../img/background_1.png);
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 0 120px;
+}
+
+header {
+	height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	background-color: transparent;
+}
+nav {
+  padding-left: 120px;
+  padding-right: 120px;
+  font-size: 0.8em;
+}
+
+/* main中文字属性修改 */
+
+nav ul {
+	list-style: none;
+	display: flex;
+}
+
+nav li {
+	text-align: center;
+	margin-left: 30px;
+}
+
+nav a {
+	width: 80px;
+	/* background-color: #0000FF; */
+	display: block;
+	padding: 10px;
+	color: #F4BDF0;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+nav a.active {
+	background-image: url(../img/TabBg.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-weight: 800;
+	color: #FEFEFF;
+	text-shadow: 0 0 10px linear-gradient(114.39deg, #C2CFFF 5.2%, #FEFEFF 115.16%);
+	/* color: #fff; */
+	/* box-shadow: 0 0 10px #fff; */
+}
+
+nav a:hover {
+	color: #FEFEFF;
+	text-shadow: 0 0 10px linear-gradient(114.39deg, #C2CFFF 5.2%, #FEFEFF 115.16%);
+	/* background-image: linear-gradient(114.39deg, #C2CFFF 5.2%, #FEFEFF 115.16%); */
+}
+
+
+h1 {
+	font-size: 48px;
+	margin-top: 200px;
+	text-align: center;
+	color: #fff;
+	text-shadow: 0 0 10px #000;
+}
+
+img {
+	display: block;
+	margin: 50px auto;
+}
+
+.MarBox{
+	background-color: #261F2A;
+	width: 40%;
+	height: auto;
+	position: fixed;
+	top: 100px;
+	left: 0px;
+	z-index: 1;
+	/* background-color: aquamarine; */
+}
+.MarBox:hover{
+	position: fixed;
+	top: 140px;
+	left: 0px;
+	z-index: 999;
+}
+.MarBox:hover > .MarTitlePin{
+	opacity: 1;
+}
+
+.AprBox{
+	width: 30%;
+	height: auto;
+	position: fixed;
+	top: 200px;
+	left: 600px;
+	z-index: 0;
+	background-color: #261F2A;
+	/* background-color: aquamarine; */
+}
+
+.AprBox:hover{
+	position: fixed;
+	top: 240px;
+	left: 600px;
+	z-index: 999;
+}
+.AprBox:hover > .AprTitlePin{
+	opacity: 1;
+}
+
+.MayBox{
+	width: 30%;
+	height: auto;
+	position: fixed;
+	top: 160px;
+	left: 1100px;
+	z-index: 2;
+	background-color: #261F2A;
+	/* background-color: aquamarine; */
+}
+
+
+.MayBox:hover{
+	position: fixed;
+	top: 200px;
+	left: 1100px;
+	z-index: 3;
+}
+.MayBox:hover > .MayTitlePin{
+	opacity: 1;
+}
+button{
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	left: -200px;
+	top: 200px;
+	animation: rotate 20s infinite linear;
+	transition: all 0.5s ease;
+	/* background-color: #0000FF; */
+	border-radius: 50%;
+/* 	overflow: hidden; */
+	background-image: url(../img/unselected.png);
+	background-position: center;
+	background-size: contain;
+}
+
+.slidebtn{
+	transition: all 2s ease;
+	position: relative;
+	bottom: -4%;
+	width: 60px;
+	height: auto;
+	z-index: 5;
+	opacity: 0;
+}
+.MarTitlePin{
+	transition: all 2s ease;
+	position: relative;
+	top: -280px;
+	width: 200px;
+	height: auto;
+	z-index: 5;
+	opacity: 0;
+}
+button:hover {
+	position: absolute;
+	/* left: -100px;
+	top: 250px; */
+	border-radius: 50%;
+	/* overflow: hidden; */
+	z-index: -1;
+	transform: scale(1.4);
+	box-shadow: 4px 4px 34px 34px rgba(185, 114, 255, 0.2);
+	transition: all 0.3s;
+	background-image: url(../img/Selected.png);
+	background-position: center;
+	background-size: contain;
+	animation: rotate 0s linear;
+	
+	}
+	@keyframes rotate {
+		from { transform: rotate(0deg); }
+		to { transform: rotate(360deg); }
+	}
+	button:hover > .slidebtn {
+		opacity: 1;
+		}
+   button:hover > .MarTitlePin {
+    	opacity: 1;
+    	}
+
+
+
+#NewBox{
+	padding: 0,60px;
+	overflow: hidden;
+	background-image: url(../img/background_1.4.png);
+/* 	opacity: 0.2; */
+	background-position: center;
+	/* background-size: contain; */
+	background-color: rgba(30, 27, 40, 0.2);
+	backdrop-filter:blur(20px);
+/* 	filter: blur(200px); */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1000px;
+	z-index: 1000;
+}
+
+#L{
+	position: relative;
+	/* background-color: #0000FF; */
+	width: 100%;
+	margin: 1rem , 120px;
+	float: left;
+}
+.closeBtn{
+	transition: color 2s;
+/*  background-color: #CCA6E0; */
+	position: fixed;
+	top: 40px;
+	width: 83% !important;
+	left: 10%;
+	height: 40px;
+/* 	background-color: #0000FF; */
+	background-image: url(../img/Close.png);
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+}
+.closeBtn:hover{
+    background-color: rgba(185, 114, 255, 0.2);
+	border-radius: 50%;
+	position: fixed;
+	top: 40px;
+	width: 40px !important;
+	left: 90%;
+	height: 40px;
+/* 	background-color: #0000FF; */
+	background-image: url(../img/Close.png);
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+}
+.MMusicHead{
+	position:absolute;
+	top: 96px;
+/* 	background-color: #0000FF; */
+	height: auto;
+	vertical-align: center;
+}
+.marTitle{
+   /* background-color: #008000; */
+	background-image: url(../img/PuTitle1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 450px;
+	height: 140px;
+	position:relative;
+	top:-30px;
+	left: 100px;
+	z-index:4;	
+	float: left;
+	
+	
+	
+}   
+.aprTitle{
+   /* background-color: #008000; */
+	background-image: url(../img/PuTitle2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 450px;
+	height: 140px;
+	position:relative;
+	top:-30px;
+	left: 100px;
+	z-index:4;	
+	float: left;
+	
+	
+} 
+.mayTitle{
+  /*  background-color: #008000; */
+	background-image: url(../img/PuTitle3.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 450px;
+	height: 140px;
+	position:relative;
+	top:-30px;
+	left: 100px;
+	z-index:4;	
+	float: left;
+	
+	
+} 
+.TopMusicTab{
+	overflow: hidden;
+	position: relative;
+	/* background-color: #00FFFF; */
+	width: 60%;
+	height: auto;
+	/* float: right; */
+}
+#Top{/* overflow: hidden; */
+    float: right;
+	vertical-align: center;
+	/* position: relative; */
+	height: auto;
+	width: 240px;
+	/* background-color: #DDDDDD; */
+}
+#TopMusicText{
+	/* position: relative; */
+	font-size: 16px;
+	letter-spacing: 0.2em;
+	text-align: right;
+	margin-right: 20px;
+	line-height: 50px;
+	vertical-align: center;
+/* 	background-color: #000000; */
+	width: 120px;
+	float: right;
+}
+#disk{
+/* 	position: relative; */
+	float: right;
+	width: 100px;
+	height: 100px;
+	border-radius: 60px;
+	overflow: hidden;
+	background-image: url(../img/diskBg.png);
+	background-position: center;
+	background-size: cover;
+/* 	border-color: #CCA6E0;
+	border-width: 12px; */
+}
+#disk > img{
+	
+	position: relative;
+	overflow: hidden;
+	top: -60px;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;	
+	filter: brightness(80%);
+	z-index: 2;
+}
+.mask { 
+	    z-index: 3;
+        position: relative;
+        top:30px;
+        left: 30px;
+        width: 40px;
+        height: 40px;
+		overflow: hidden;
+		border-radius: 50%;	
+       background-color: rgba(128, 0, 128, 0.5);
+	/* 	background-color: #0000FF; */
+        opacity: 0;
+        transition: opacity 0.3s;
+/*        display: flex;
+        justify-content: center;
+        align-items: center; */
+      }
+      #disk:hover > .mask:hover {
+        opacity: 1;
+      }
+	 #disk:hover > img{
+		  animation: rotate 0s linear ;
+	  }
+	  @keyframes name{
+	  	from { transform: rotate(0deg); }
+	  	to { transform: rotate(360deg); }
+	  }
+.play-icon {
+		background-image: url(../img/Play.png);
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border-radius: 50%;
+/*        display: flex;
+        justify-content: center;
+        align-items: center; */
+        cursor: pointer;
+      }
+
+.Content{
+	/* background-color: #0000FF; */
+	position: absolute;
+	top: 110px;
+	left: 0px;
+	width: 100% !important;
+	height: auto;
+	float: left;
+}
+.Content > img{
+	float: left;
+	margin-left: 80px;
+	margin-top: 40px;
+	width: 86% !important;
+	height: auto;
+	/* background-color: #000000; */
+}
+
+
+#E3{
+	/* background-color: #000000; */
+	width: 1400px;
+	height: 400px;
+	position: absolute;
+	bottom: 6px;
+	left: 5%;
+	transform: scale(0.95);
+
+}
+#E4{
+	/* background-color: #000000; */
+	width: 1400px;
+	height: 400px;
+	position: absolute;
+	bottom: 6px;
+	left: 5%;
+	transform: scale(0.95);
+
+}
+#E5{
+	/* background-color: #000000; */
+	width: 1400px;
+	height: 400px;
+	position: absolute;
+	bottom: 6px;
+	left: 5%;
+	transform: scale(0.95);
+
+}
+

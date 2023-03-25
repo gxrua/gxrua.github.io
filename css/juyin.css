@@ -1,0 +1,341 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+p{
+	font-size: 12px;
+	line-height: 100px;
+	font-weight: lighter;
+	position: relative;
+	top: -80px;
+}
+
+main {
+  font-family: 'Rounded Mplus 1c', sans-serif;
+  font-size: 24px;
+  font-weight: 1920px;
+  line-height: 72px;
+  letter-spacing: 0.8em;
+  text-align: center;
+  color: #CCA6E0;
+  font-size: 24px;
+  position: page;
+  margin-top: 300px;
+/* background-color: aqua; */
+}
+body {
+	background-image: url(../img/background_1.png);
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 0 120px;
+}
+
+header {
+	
+	height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	background-color: transparent;
+	backdrop-filter: blur(24px);
+}
+nav {
+  padding-left: 120px;
+  padding-right: 120px;
+  font-size: 0.8em;
+}
+nav ul {
+	list-style: none;
+	display: flex;
+}
+
+nav li {
+	text-align: center;
+	margin-left: 30px;
+}
+
+nav a {
+	width: 80px;
+	/* background-color: #0000FF; */
+	display: block;
+	padding: 10px;
+	color: #F4BDF0;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+nav a.active {
+	background-image: url(../img/TabBg.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-weight: 800;
+	color: #FEFEFF;
+	text-shadow: 0 0 10px linear-gradient(114.39deg, #C2CFFF 5.2%, #FEFEFF 115.16%);
+	/* color: #fff; */
+	/* box-shadow: 0 0 10px #fff; */
+}
+
+nav a:hover {
+	color: #FEFEFF;
+	text-shadow: 0 0 10px linear-gradient(114.39deg, #C2CFFF 5.2%, #FEFEFF 115.16%);
+	/* background-image: linear-gradient(114.39deg, #C2CFFF 5.2%, #FEFEFF 115.16%); */
+}
+
+
+h1 {
+	font-size: 48px;
+	margin-top: 200px;
+	text-align: center;
+	color: #fff;
+	text-shadow: 0 0 10px #000;
+}
+.text-container{
+	/* background-color: #00FFFF; */
+	width: 80%;
+	height: 80px;
+	position: absolute;
+	top: 300px;
+	left: 10%;
+	overflow: hidden;
+}
+h6{
+	width: 80%;
+	height: auto;
+	position: absolute;
+	left: 10%;
+	top: 22%;
+	text-align: center;
+	letter-spacing: 1.2em;
+	font-size: 0.4em;
+	line-height: 5em;
+	transform: scale(1.4);
+	/* background-color: #0000FF; */
+    animation: typing 3s steps(40, end), blink-caret 0.5s step-start infinite;
+	
+}
+     @keyframes typing {
+       from { width: 32% }
+       to { width: 80% }
+     }
+     @keyframes blink-caret {
+       from, to { border-color: transparent }
+       50% { border-color: #F2F2F2 }
+     }
+.bg{
+	background-image: url(../img/liuxingBg.png);
+	background-size: cover;
+	background-position: contain;
+	background-repeat: no-repeat;
+	position: relative;
+	left: 200px;
+	top: 200px;
+	width: 1000px;
+	height: 1800px;
+	background-color: #000000;
+	transform: scale(0.5);
+	
+}
+.centerBall{
+	overflow: hidden;
+	width: 40%;
+	height: 680px;
+	background-color: transparent;
+	position:absolute;
+	bottom: 0px;
+	left: 30%;
+	z-index: 777;
+	/* background-color: #000000; */
+}
+.centerBall > img{
+	width: 600px;
+	height: 600px;
+	position: relative;
+	top: 400px;
+    opacity: 0.4;
+}
+.centerBall>img:hover{
+	opacity: 1;
+	transform: rotate(360deg);
+	transition: all 1s ease;
+	pointer-events: painted;
+}
+
+.huixing{
+	background-image: url(../img/huixing.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	/* background-color: #00FFFF; */
+	width: 20%;
+	height: 400px;
+	position: absolute;
+	top: -400px;
+	left: 40%;
+}
+.centerBall:hover > .huixing{
+	position: absolute;
+	top: 600px;
+	left: 40%;
+	transition: all 1s ease-in-out;
+}
+.centerBall:hover > img{
+	opacity: 1;
+	transition: all 3s ease;
+
+}
+button{
+	position: fixed;
+	bottom: 0px;
+	left: 44%;
+	width: 12%;
+	height: 60px;
+	padding-bottom: 240px;
+	background-color: transparent;
+	border: transparent;
+	z-index: 888;
+/* 	background-color: #00FFFF; */
+}
+.EXPLORE{
+	background-image: url(../img/START%20EXPLORE.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.CHANGEtoAM{
+	background-image: url(../img/CHANGE%20TO%20AM.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.CHANGEtoPM{
+	background-image: url(../img/CHANGE%20TO%20PM.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#chart{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 90%;
+	width: 100%;
+	/* padding: -20%; */
+	/* background-color: #000000; */
+	overflow: hidden;
+}
+.AM > .chartbg{
+	position: relative;
+	top: 3%;
+	left: 3.5%;
+	width: 80%;
+	height: 80%;
+	/* background-color: #00FFFF; */
+	background-image: url(../img/liuxingBg.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: 2;
+}
+.AM > .title{
+	position: relative;
+	z-index: 3;
+	top: 12%;
+	left: 7%;
+	width: 300px;
+	height: 100px;
+	/* background-color: #4CAF50; */
+	background-image: url(../img/AMtitle.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.PM > .title{
+	position: relative;
+	z-index: 3;
+	top: 12%;
+	left: 7%;
+	width: 300px;
+	height: 100px;
+	/* background-color: #4CAF50; */
+	background-image: url(../img/PMtitle.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#huixingData{
+	position: absolute;
+	top: 30%;
+	left: 10%;
+	width: 80%;
+	height: 100%;
+}
+.AMdata{	
+	position: absolute;
+	/* top: 140px !important; */
+	top: 140px !important;
+	
+	/* background-color: #000000; */
+	z-index: 5;
+	background-image: url(../img/AMdata.png);
+	/* background-position: top; */
+	background-size: contain;
+	background-repeat: no-repeat;
+	animation: move-up 2s ease-in-out;
+	
+}
+@keyframes move-up {
+		  from {
+		           transform: translateY(200px);
+		           opacity: 0;
+		         }
+		         to {
+		           transform: translateY(0);
+		           opacity: 1;
+		         }
+	      
+	     }
+	  
+.PM > .chartbg{
+	position: relative;
+	top: 3%;
+	left: 3.5%;
+	width: 80%;
+	height: 80%;
+	/* background-color: #00FFFF; */
+	background-image: url(../img/liuxingBg-PM.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: 2;
+}
+	  
+.PMdata{	
+	position: absolute;
+	top: 90px !important;
+	z-index: 5;
+	background-image: url(../img/PMdata.png);
+	/* background-position: top; */
+	background-size: contain;
+	background-repeat: no-repeat;
+	animation: move-down 2s ease-in-out;
+}
+  @keyframes move-down {
+	  from {
+	           transform: translateY(-800px);
+	           opacity: 0;
+	         }
+	         to {
+	           transform: translateY(-4px);
+	           opacity: 1;
+	         }
+       
+      }
